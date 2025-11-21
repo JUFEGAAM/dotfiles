@@ -1,0 +1,14 @@
+# Configuración Wofi Minimalista
+width=450
+height=300
+location=center
+show=drun
+prompt=Buscar...
+filter_rate=100
+allow_images=true
+no_actions=true
+halign=fill
+valign=start
+insensitive=true
+allow_markup=true
+mode=drun

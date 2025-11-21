@@ -1,0 +1,75 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin-top": 5,
+    "margin-left": 10,
+    "margin-right": 10,
+    "height": 26,
+    "spacing": 10,
+
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "network", "tray"],
+
+    // --- WORKSPACES ---
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "format": "{name}",
+        "persistent-workspaces": {
+            "1": [], "2": [], "3": [], "4": []
+        }
+    },
+
+    // --- RELOJ (Click para fecha, Hover para calendario) ---
+    "clock": {
+        // He añadido 3 espacios después del icono para separarlo bien
+        "format": "   {:%H:%M}",
+        "format-alt": "   {:%d/%m/%Y}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+                    "mode"          : "year",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
+    },
+
+    // --- SONIDO ---
+    "pulseaudio": {
+        // Espacios añadidos entre el icono y el porcentaje
+        "format": "{icon}   {volume}%",
+        "format-muted": "󰖁   Muted",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol",
+        "scroll-step": 5
+    },
+
+    // --- INTERNET ---
+    "network": {
+        // Espacios añadidos entre el icono y el nombre
+        "format-wifi": "   {essid}",
+        "format-ethernet": "󰈀   Eth",
+        "format-disconnected": "󰤮   Off",
+        "tooltip-format": "{ifname} via {gwaddr}",
+        "on-click": "nm-connection-editor"
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 8
+    }
+}

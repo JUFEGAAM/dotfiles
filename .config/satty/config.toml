@@ -1,0 +1,11 @@
+[general]
+# Cierra Satty automáticamente después de copiar al portapapeles
+early-exit = true
+copy-command = "wl-copy"
+
+# Opcional: Si quieres que al iniciarse seleccione una herramienta por defecto
+# (ej: brush, arrow, text, crop)
+initial-tool = "arrow"
+
+# Opcional: Copiar al portapapeles automáticamente al abrir (si quisieras)
+# copy-command = "wl-copy"

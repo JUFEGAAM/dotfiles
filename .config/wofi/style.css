@@ -1,0 +1,52 @@
+/* Reset general para quitar estilos feos por defecto */
+* {
+    font-family: "JetBrainsMono Nerd Font", "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* La ventana principal */
+window {
+    margin: 0px;
+    border: 2px solid #0044aa; /* TU BORDE AZUL */
+    background-color: #000000; /* FONDO NEGRO */
+    border-radius: 0px;        /* Totalmente cuadrado */
+}
+
+/* La caja donde escribes */
+#input {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #0044aa; /* Un borde fino azul también aquí */
+    border-radius: 0px;
+    background-color: #11111b; /* Ligeramente más claro para distinguir */
+    color: #ffffff;
+}
+
+/* La lista de aplicaciones */
+#inner-box {
+    margin: 10px;
+    background-color: #000000;
+}
+
+/* Cada elemento de la lista */
+#entry {
+    padding: 10px;
+    margin: 0px;
+    border: none;
+    background-color: transparent;
+    color: #aaaaaa;
+}
+
+/* El elemento seleccionado (Donde está el foco) */
+#entry:selected {
+    background-color: #0044aa; /* FONDO AZUL AL SELECCIONAR */
+    color: #ffffff;
+    border-radius: 0px;
+}
+
+/* Iconos */
+#img {
+    margin-right: 10px;
+    background-color: transparent;
+}
