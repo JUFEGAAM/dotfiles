@@ -1,6 +1,6 @@
-# My Dotfiles - CachyOS + Hyprland
+## My Dotfiles - CachyOS + Hyprland
 
-System Specs:
+### System Specs:
 
 ```text
            .-------------------------:                    juanito@batman
