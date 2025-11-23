@@ -1,41 +1,41 @@
-/* --- FUENTE --- */
+/* --- FONT SETTINGS --- */
 * {
     font-family: "JetBrainsMono Nerd Font", monospace;
     font-weight: bold;
     font-size: 16px;
 }
 
-/* Ventana transparente */
+/* Transparent window */
 window {
     background-color: transparent;
 }
 
-/* --- CONTENEDOR PRINCIPAL --- */
+/* --- MAIN CONTAINER --- */
 #outer-box {
     margin: 0px;
-    background-color: #050a14; /* Tu Azul Oscuro Profundo */
-    border: 2px solid #0044aa; /* Borde Zafiro */
-    border-radius: 0px;        /* Cuadrado */
+    background-color: #050a14; /* Deep Dark Blue */
+    border: 2px solid #0044aa; /* Sapphire Border */
+    border-radius: 0px;        /* Square */
 }
 
-/* --- EL BUSCADOR (VISIBLE Y BONITO) --- */
+/* --- SEARCH BAR (VISIBLE & STYLED) --- */
 #input {
     margin: 10px;
     padding: 10px;
-    border: 1px solid #0044aa; /* Borde fino azul */
+    border: 1px solid #0044aa; /* Thin blue border */
     border-radius: 0px;
-    background-color: #0a1220; /* Un poco más claro que el fondo para resaltar */
-    color: #cdd6f4;            /* Texto blanco */
+    background-color: #0a1220; /* Slightly lighter than bg to stand out */
+    color: #cdd6f4;            /* White text */
 }
 
-/* --- LISTA DE APPS --- */
+/* --- APP LIST --- */
 #scroll, #inner-box {
     margin: 5px;
     border: none;
     background-color: transparent;
 }
 
-/* --- CADA APP --- */
+/* --- APP ENTRY --- */
 #entry {
     padding: 10px;
     margin: 0px;
@@ -44,14 +44,14 @@ window {
     color: #aaaaaa;
 }
 
-/* --- AL SELECCIONAR APP --- */
+/* --- ON SELECTION --- */
 #entry:selected {
-    background-color: #0044aa; /* Azul Zafiro */
+    background-color: #0044aa; /* Sapphire Blue */
     color: #ffffff;
-    outline: none; /* Sin líneas raras */
+    outline: none; /* No weird lines */
 }
 
-/* Iconos de las apps */
+/* App Icons */
 #img {
     margin-right: 10px;
     background-color: transparent;

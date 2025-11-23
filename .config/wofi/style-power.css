@@ -1,55 +1,76 @@
-/* --- FUENTE --- */
+/* --- FONT SETTINGS --- */
 * {
     font-family: "JetBrainsMono Nerd Font", monospace;
     font-weight: bold;
     font-size: 16px;
 }
 
-/* Ventana transparente */
+/* Transparent window to avoid ugly black corners outside the box */
 window {
     background-color: transparent;
 }
 
-/* --- CONTENEDOR PRINCIPAL --- */
+/* --- MAIN CONTAINER (THE BLUE BLOCK) --- */
 #outer-box {
     margin: 0px;
-    background-color: #050a14; /* Tu Azul Oscuro Profundo */
-    border: 2px solid #0044aa; /* Borde Zafiro */
-    border-radius: 0px;        /* Cuadrado */
-    
-    /* Relleno abajo para compensar el hueco de arriba */
+    /* UNIFIED background color for the entire menu */
+    background-color: #050a14; 
+    /* Sapphire Border */
+    border: 2px solid #0044aa; 
+    /* Square corners */
+    border-radius: 0px; 
+
+    /* CENTERING TRICK: Bottom padding to visually balance the top spacing */
     padding-bottom: 15px; 
 }
 
-/* --- BUSCADOR MUERTO (Solo en este archivo) --- */
+/* --- KILL THE SEARCH BAR --- */
+/* Force it to take no space and not render */
 #input {
     display: none;
+    visibility: hidden;
     height: 0px;
     margin: 0px;
     padding: 0px;
+    border: none;
     opacity: 0;
 }
 
-/* Contenedores internos */
-#scroll, #inner-box {
+/* --- INTERNAL CONTAINERS --- */
+/* Make them transparent to show the #outer-box background */
+#scroll {
     margin: 0px;
     padding: 0px;
     border: none;
     background-color: transparent;
 }
 
-/* --- BOTONES --- */
-#entry {
-    padding: 15px 20px;
+#inner-box {
     margin: 0px;
+    padding: 0px;
     border: none;
-    color: #cdd6f4;
     background-color: transparent;
 }
 
-/* --- SELECCIÓN --- */
+/* --- BUTTONS (OPTIONS) --- */
+#entry {
+    /* Generous padding for tall, clickable buttons */
+    padding: 15px 20px;
+    /* No margins between them to look like a solid block */
+    margin: 0px; 
+    border: none;
+    /* Text color */
+    color: #cdd6f4;
+    /* Transparent background (inherits dark blue) */
+    background-color: transparent;
+}
+
+/* --- ON SELECTION --- */
 #entry:selected {
-    background-color: #0044aa; /* Azul Zafiro */
+    /* Change background to Sapphire Blue */
+    background-color: #0044aa; 
     color: #ffffff;
+    /* Remove any weird borders or focus lines */
+    border: none;
     outline: none;
 }

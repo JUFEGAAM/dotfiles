@@ -21,9 +21,12 @@
         }
     },
 
-    // --- RELOJ (Click para fecha, Hover para calendario) ---
+    // --- CLOCK (Click for date, Hover for calendar) ---
     "clock": {
-        // He añadido 3 espacios después del icono para separarlo bien
+        // Forces the calendar and date format to English
+        "locale": "en_US.UTF-8",
+        
+        // Added 3 spaces after the icon for better separation
         "format": "   {:%H:%M}",
         "format-alt": "   {:%d/%m/%Y}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
@@ -46,9 +49,9 @@
                     }
     },
 
-    // --- SONIDO ---
+    // --- AUDIO ---
     "pulseaudio": {
-        // Espacios añadidos entre el icono y el porcentaje
+        // Added spaces between icon and percentage
         "format": "{icon}   {volume}%",
         "format-muted": "󰖁   Muted",
         "format-icons": {
@@ -58,9 +61,9 @@
         "scroll-step": 5
     },
 
-    // --- INTERNET ---
+    // --- NETWORK ---
     "network": {
-        // Espacios añadidos entre el icono y el nombre
+        // Added spaces between icon and name
         "format-wifi": "   {essid}",
         "format-ethernet": "󰈀   Eth",
         "format-disconnected": "󰤮   Off",

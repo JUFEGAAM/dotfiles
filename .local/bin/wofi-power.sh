@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Iconos Nerd Font (Limpios y serios)
-lock="   Bloquear"
-reboot="   Reiniciar"
-shutdown="   Apagar"
+lock="   Lock"
+reboot="   Reboot"
+shutdown="   Shutdown"
 
 # Ejecutar Wofi
 # Altura 175 para compensar el hueco fantasma de arriba con el padding de abajo
