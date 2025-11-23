@@ -31,14 +31,14 @@
 
 ### To install this configuration (Gotham) on a fresh Arch/CachyOS system:
 
-**Clone the repository:**
+1. **Clone the repository:**
 
 ```
 git clone https://github.com/JUFEGAAM/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ```
 
-**Run the installer:**
+2. **Run the installer:**
 
 ```
 ./install.sh
