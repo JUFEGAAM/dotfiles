@@ -16,43 +16,40 @@ window {
     background-color: #050a14; /* Tu Azul Oscuro Profundo */
     border: 2px solid #0044aa; /* Borde Zafiro */
     border-radius: 0px;        /* Cuadrado */
+    
+    /* Relleno abajo para compensar el hueco de arriba */
+    padding-bottom: 15px; 
 }
 
-/* --- EL BUSCADOR (VISIBLE Y BONITO) --- */
+/* --- BUSCADOR MUERTO (Solo en este archivo) --- */
 #input {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid #0044aa; /* Borde fino azul */
-    border-radius: 0px;
-    background-color: #0a1220; /* Un poco más claro que el fondo para resaltar */
-    color: #cdd6f4;            /* Texto blanco */
+    display: none;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    opacity: 0;
 }
 
-/* --- LISTA DE APPS --- */
+/* Contenedores internos */
 #scroll, #inner-box {
-    margin: 5px;
+    margin: 0px;
+    padding: 0px;
     border: none;
     background-color: transparent;
 }
 
-/* --- CADA APP --- */
+/* --- BOTONES --- */
 #entry {
-    padding: 10px;
+    padding: 15px 20px;
     margin: 0px;
     border: none;
+    color: #cdd6f4;
     background-color: transparent;
-    color: #aaaaaa;
 }
 
-/* --- AL SELECCIONAR APP --- */
+/* --- SELECCIÓN --- */
 #entry:selected {
     background-color: #0044aa; /* Azul Zafiro */
     color: #ffffff;
-    outline: none; /* Sin líneas raras */
-}
-
-/* Iconos de las apps */
-#img {
-    margin-right: 10px;
-    background-color: transparent;
+    outline: none;
 }

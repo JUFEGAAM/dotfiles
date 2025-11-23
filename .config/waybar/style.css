@@ -1,3 +1,4 @@
+/* --- GLOBAL RESET --- */
 * {
     border: none;
     border-radius: 0;
@@ -7,23 +8,32 @@
     min-height: 0;
 }
 
+/* --- BAR BACKGROUND --- */
 window#waybar {
-    background-color: rgba(0, 0, 0, 0); 
+    /* Deep Blue background (Matches Wofi/HyprOne theme) */
+    background-color: #050a14; 
     color: #ffffff;
 }
 
+/* --- MODULES --- */
+/* Styling for the individual "pills" on the bar */
 #workspaces,
 #clock,
 #pulseaudio,
 #network,
 #tray {
-    background-color: #11111b;
-    padding: 0px 15px;
-    border-radius: 15px;
-    border: 1px solid #0044aa;
-    opacity: 0.9;
+    /* Slightly lighter blue to distinguish modules from the bar background */
+    background-color: #0d1b2a; 
+    
+    padding: 2px 15px;
+    margin: 4px 4px; /* Vertical margin adds "depth" to the bar */
+    
+    border-radius: 10px;
+    border: 1px solid #1c2e4a; /* Subtle border definition */
+    opacity: 1;
 }
 
+/* --- WORKSPACES --- */
 #workspaces {
     padding: 0;
 }
@@ -31,27 +41,28 @@ window#waybar {
 #workspaces button {
     padding: 0 10px;
     background-color: transparent;
-    color: #aaaaaa;
-    border-radius: 15px;
+    color: #aaaaaa; /* Dimmed text for inactive workspaces */
+    border-radius: 10px;
 }
 
 #workspaces button:hover {
-    background-color: #333333;
-}
-
-#workspaces button.active {
-    background-color: #0044aa;
+    background-color: #1c2e4a; 
     color: #ffffff;
-    border-radius: 15px;
 }
 
-#network.disconnected {
-    color: #ff5555;
-    border-color: #ff5555;
+/* The currently active workspace */
+#workspaces button.active {
+    /* Sapphire Blue accent color */
+    background-color: #0044aa; 
+    color: #ffffff;
+    border-radius: 10px;
+    /* Subtle glow effect */
+    box-shadow: 0 0 5px rgba(0, 68, 170, 0.5); 
 }
 
-#pulseaudio.muted {
-    color: #ff5555;
+/* --- STATUS COLORS --- */
+#network.disconnected, #pulseaudio.muted {
+    color: #ff5555; /* Red alert color */
     border-color: #ff5555;
 }
 
