@@ -29,7 +29,7 @@
 
 ## Automatic Installation
 
-### To install this configuration (Gotham) on a fresh Arch/CachyOS system:
+### To install this configuration (Gotham) on a fresh CachyOS/Hyprland system:
 
 1. **Clone the repository:**
 
