@@ -26,3 +26,36 @@
            .-=======================+++:
              ..........................
 ```
+
+## Automatic Installation
+
+### To install this configuration (Gotham) on a fresh Arch/CachyOS system:
+
+**Clone the repository:**
+
+```
+```
+git clone [https://github.com/JUFEGAAM/dotfiles.git](https://github.com/JUFEGAAM/dotfiles.git) ~/dotfiles
+cd ~/dotfiles
+```
+```
+
+**Run the installer:**
+
+```
+```
+./install.sh
+```
+```
+
+**The script will handle:**
+
+- Installing necessary packages (Hyprland, Waybar, Yazi, etc.).
+
+- Setting up configurations
+
+- Setting up themes and permissions.
+
+- A fresh Hyprland setup with all the configurations well explained and easy to change
+
+***Note: Restart your system after installation to apply all changes.***
