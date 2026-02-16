@@ -68,7 +68,7 @@
         "format-ethernet": "󰈀   Eth",
         "format-disconnected": "󰤮   Off",
         "tooltip-format": "{ifname} via {gwaddr}",
-        "on-click": "nm-connection-editor"
+        "on-click": "alacritty -e nmtui"
     },
 
     "tray": {
